@@ -31,3 +31,5 @@ build/
 
 ### VS Code ###
 .vscode/
+json_data/alertas_graves.json
+json_data/alertas_medicas.json
