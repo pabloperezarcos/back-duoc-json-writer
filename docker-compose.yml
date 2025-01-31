@@ -1,0 +1,21 @@
+services:
+  back-duoc-json-writer:
+    image: pabloperezarcos/back-duoc-json-writer:latest
+    container_name: back-duoc-json-writer
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      SPRING_RABBITMQ_HOST: rabbitmq
+      SPRING_RABBITMQ_PORT: 5672
+      SPRING_RABBITMQ_USERNAME: guest
+      SPRING_RABBITMQ_PASSWORD: guest
+    volumes:
+      - ./json_data:/app/json
+    restart: always
+    networks:
+      - sumativa_duoc
+
+networks:
+  sumativa_duoc:
+    external: true
