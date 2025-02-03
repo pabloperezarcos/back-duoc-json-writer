@@ -1,0 +1,5 @@
+proyecto\back_duoc_json_writer\config\RabbitMQConfig.class
+proyecto\back_duoc_json_writer\listener\RabbitMQJsonListener$1.class
+proyecto\back_duoc_json_writer\listener\RabbitMQJsonListener.class
+proyecto\back_duoc_json_writer\model\AlertaMedica.class
+proyecto\back_duoc_json_writer\BackDuocJsonWriterApplication.class
